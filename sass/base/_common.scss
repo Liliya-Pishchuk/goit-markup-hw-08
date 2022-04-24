@@ -1,0 +1,42 @@
+body {
+  font-family: var(--primary-font-family);
+  font-size: 14px;
+  line-height: 0.03em;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--fone-background-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
