@@ -467,11 +467,20 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .header__contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 60px;
   }
   .header__nav-list {
     display: none;
@@ -494,11 +503,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    height: 80px;
-  }
   .header__navigation {
     display: flex;
     align-items: center;
@@ -523,10 +527,11 @@ img {
     height: 4px;
     border-radius: 2px;
     background-color: var(--social-akcent-color);
-    bottom: -31px;
+    bottom: -1px;
     left: 0;
   }
   .header__nav-link {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     font-style: normal;
@@ -535,9 +540,6 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-  }
-  .header__nav-link:hover, .header__nav-link:focus {
-    color: var(--akcent-text-color);
   }
   .header__menu-burger-btn {
     display: none;
@@ -555,15 +557,14 @@ img {
     fill: currentColor;
     margin-right: 10px;
   }
-  .header__contacts-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .header__nav-link {
+    position: relative;
+  }
+  .header__nav-link:hover, .header__nav-link:focus {
+    color: var(--akcent-text-color);
   }
   .header__nav-list {
     margin-left: 93px;
@@ -575,7 +576,6 @@ img {
   }
   .header__contacts-item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 0;
   }
   .header__contacts-link {
     padding-top: 32px;
@@ -638,6 +638,7 @@ img {
     max-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: url("/images/mobile/Header-img.jpg");
   }
   .hero__title {
     font-size: 26px;
@@ -647,7 +648,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../);
+    background-image: url("/images/mobile/Header-img@2x.jpg");
   }
 }
 
