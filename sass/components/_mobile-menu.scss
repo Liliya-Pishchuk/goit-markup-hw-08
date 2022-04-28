@@ -88,7 +88,12 @@
 
   .mobile-menu__social {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .mobile-menu__social-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
   }
 
   .mobile-menu__social-link {
@@ -98,10 +103,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--akcent-text-color);
-  }
-
-  .mobile-menu__social-border {
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
   }
 }
 
