@@ -27,7 +27,6 @@
   }
   .specifics__list {
     flex-wrap: wrap;
-    margin: -15px;
   }
 
   .specifics__item {
@@ -54,6 +53,7 @@
 @media screen and (min-width: 768px) {
   .specifics__list {
     display: flex;
+    margin: -15px;
   }
 }
 
