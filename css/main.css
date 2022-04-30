@@ -729,10 +729,6 @@ img {
   .specifics__list {
     flex-wrap: wrap;
   }
-  .specifics__item {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -753,14 +749,17 @@ img {
     display: flex;
     margin: -15px;
   }
+  .specifics__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .specifics__item {
     width: 270px;
-  }
-  .specifics__item:not(:last-child) {
-    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
