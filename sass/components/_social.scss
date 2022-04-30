@@ -16,17 +16,25 @@
   height: 44px;
   border-radius: 50%;
   fill: var(--social-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    fill: var(--social-hover-color);
-    background-color: var(--social-akcent-color);
-  }
 }
 
 .social-item__icon {
   display: flex;
   justify-content: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .social-item__links {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--social-hover-color);
+      background-color: var(--social-akcent-color);
+    }
+  }
+
+  .social-item__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
