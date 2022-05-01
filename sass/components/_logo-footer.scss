@@ -1,11 +1,27 @@
-.footer-logo-link {
+.footer__logo-link {
   display: block;
-  margin-bottom: 20px;
+
   font-family: var(--font-logo);
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.footer__logo-link_part-one {
+  color: var(--akcent-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo-link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo-link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
