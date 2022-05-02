@@ -1,17 +1,17 @@
 /*-----------------------start Portfolio-----------------------*/
 
 /*------filter------*/
-.filter-list {
+.filter__list {
   display: flex;
   justify-content: center;
 }
 
-.filter-list-item {
+.filter__item {
   margin-right: 8px;
   margin-bottom: 50px;
 }
 
-.filter-list-button {
+.filter__button {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -40,20 +40,20 @@
 }
 
 /*------projects------*/
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.projects-list-item {
+.projects__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.projects-list-link {
+.projects__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -64,13 +64,13 @@
   }
 }
 
-.project-description {
+.project__description {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
 }
 
-.projects-item-title {
+.projects__item-title {
   margin-bottom: 4px;
   font-style: normal;
   font-weight: 700;
@@ -80,7 +80,7 @@
   color: var(--title-text-color);
 }
 
-.projects-item-text {
+.projects__item-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -89,12 +89,12 @@
   color: var(--primary-text-color);
 }
 
-.projects-list-link-img {
+.projects__link-img {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,8 +109,8 @@
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .projects-list-link:hover &,
-  .projects-list-link:focus & {
+  .projects__link:hover &,
+  .projects__link:focus & {
     transform: translate(0);
   }
 }
