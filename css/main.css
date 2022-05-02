@@ -1301,7 +1301,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project__description {
+.projects__description {
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
@@ -1317,7 +1317,7 @@ img {
   color: var(--title-text-color);
 }
 
-.projects-item-text {
+.projects__item-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1326,7 +1326,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.projects-list-link-img {
+.projects__link-img {
   position: relative;
   overflow: hidden;
 }
@@ -1347,8 +1347,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list-link:hover .projects__overlay,
-.projects-list-link:focus .projects__overlay {
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
   transform: translate(0);
 }
 
