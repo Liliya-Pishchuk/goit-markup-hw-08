@@ -25,6 +25,8 @@
   }
 
   .mobile-menu.is-open {
+    position: fixed;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
